@@ -8,7 +8,9 @@ export const useDeleteApplication = () => {
 
   const deleteApplication = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/jobs/${id}`);
+      await axios.delete(
+        `https://job-tracker-backend-c4hs.onrender.com/api/jobs/${id}`
+      );
       const filtered = applications.filter((app) => app._id !== id);
       setApplications(filtered);
       toast.success("Application deleted successfully!");

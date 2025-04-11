@@ -9,7 +9,7 @@ export const useUpdateStatus = () => {
   const updateStatus = async (id, newStatus) => {
     try {
       const response = await axios.patch(
-        `http://localhost:5000/api/jobs/${id}`,
+        `https://job-tracker-backend-c4hs.onrender.com/api/jobs/${id}`,
         { status: newStatus }
       );
 

@@ -11,7 +11,9 @@ export const useGetApplications = () => {
     const fetchApplications = async () => {
       try {
         setLoading(true);
-        const { data } = await axios.get("http://localhost:5000/api/jobs");
+        const { data } = await axios.get(
+          "https://job-tracker-backend-c4hs.onrender.com/api/jobs"
+        );
         console.log("Fetched applications:", data);
         setApplications(data?.data);
         toast.success("Applications fetched successfully!");
