@@ -1,5 +1,5 @@
 import { Toaster } from "./components/ui/sonner";
-import Homepage from "./pages/Homepage";
+import Homepage from "./pages/HomePage.jsx";
 function App() {
   return (
     <div>

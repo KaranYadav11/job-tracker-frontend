@@ -1,4 +1,3 @@
-import AddJob from "@/components/AddJob";
 import JobApplications from "@/components/JobApplications";
 import Navbar from "@/components/Navbar";
 
